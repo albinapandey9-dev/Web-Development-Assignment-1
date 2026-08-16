@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Albina Pandey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">ALBINA PANDEY</div>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="sitereport.html">Site Report</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="blog">
+
+        <p class="welcome">MY BLOG</p>
+        <h1>Learning Web Development</h1>
+        <p class="date">16 August 2026 | Albina Pandey</p>
+
+        <img src="blog1.png" alt="Flower">
+
+        <article>
+            <h2>How I Started</h2>
+            <p>
+                I started learning web development with HTML and CSS.
+                In the beginning, writing code and understanding tags was
+                difficult, but practising helped me understand the basics.
+            </p>
+
+            <h2>What I Have Learned</h2>
+            <p>
+                I have learned how to create webpages, add images and links,
+                design layouts with CSS and make pages responsive for
+                different screen sizes.
+            </p>
+
+            <h2>My Experience</h2>
+            <p>
+                Making my portfolio has been a good learning experience.
+                I made mistakes while coding, but fixing them helped me
+                understand how websites actually work.
+            </p>
+
+            <h2>What I Want to Learn Next</h2>
+            <p>
+                I would like to improve my JavaScript skills and learn more
+                about databases and backend development in the future.
+            </p>
+        </article>
+
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Albina Pandey. All Rights Reserved.</p>
+</footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
