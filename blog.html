@@ -1,81 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | Albina Pandey</title>
+
+    <title>Albina Pandey | Blog</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <nav class="navbar">
-        <div class="logo">ALBINA PANDEY</div>
+    <header>
+        <nav class="navbar">
 
-        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+            <a href="index.html" class="logo">ALBINA PANDEY</a>
 
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="project.html">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="blog.html" class="active">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="sitereport.html">Site Report</a></li>
-        </ul>
-    </nav>
-</header>
+            <button class="menu-btn" onclick="toggleMenu()" aria-label="Open navigation menu">
+                ☰
+            </button>
 
-<main>
-    <section class="blog">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="sitereport.html">Site Report</a></li>
+            </ul>
 
-        <p class="welcome">MY BLOG</p>
-        <h1>Learning Web Development</h1>
-        <p class="date">16 August 2026 | Albina Pandey</p>
+        </nav>
+    </header>
 
-        <img src="blog1.png" alt="Flower">
 
-        <article>
-            <h2>How I Started</h2>
-            <p>
-                I started learning web development with HTML and CSS.
-                In the beginning, writing code and understanding tags was
-                difficult, but practising helped me understand the basics.
-            </p>
+    <main>
 
-            <h2>What I Have Learned</h2>
-            <p>
-                I have learned how to create webpages, add images and links,
-                design layouts with CSS and make pages responsive for
-                different screen sizes.
-            </p>
+        <article class="blog">
 
-            <h2>My Experience</h2>
-            <p>
-                Making my portfolio has been a good learning experience.
-                I made mistakes while coding, but fixing them helped me
-                understand how websites actually work.
-            </p>
+            <header class="blog-intro">
+                <p>MY BLOG</p>
+                <h1>Why I Love the Mountains</h1>
 
-            <h2>What I Want to Learn Next</h2>
-            <p>
-                I would like to improve my JavaScript skills and learn more
-                about databases and backend development in the future.
-            </p>
+                <p>
+                    Mountains are one of the places I enjoy because they
+                    provide beautiful views, fresh air and a peaceful
+                    environment.
+                </p>
+            </header>
+
+
+            <section class="blog-section">
+
+                <figure class="blog-image">
+                    <img src="mountain1.jpg"
+                         alt="Mountain landscape with snow covered peaks">
+
+                    <figcaption>
+                        A peaceful view of the mountains.
+                    </figcaption>
+                </figure>
+
+                <div class="blog-text">
+                    <h2>The Beauty of Mountains</h2>
+
+                    <p>
+                        Mountains are some of the most beautiful natural
+                        places in the world. Their large peaks, forests,
+                        rivers and changing weather make every mountain
+                        landscape different.
+                    </p>
+
+                    <p>
+                        I like mountains because they provide a break from
+                        busy cities. Spending time in nature can be relaxing
+                        and gives people an opportunity to enjoy the
+                        surroundings.
+                    </p>
+                </div>
+
+            </section>
+
+
+            <section class="blog-section reverse">
+
+                <figure class="blog-image">
+                    <img src="mountain2.jpg"
+                         alt="Person walking on a mountain trail">
+
+                    <figcaption>
+                        Walking through a mountain trail.
+                    </figcaption>
+                </figure>
+
+                <div class="blog-text">
+                    <h2>Learning from the Mountains</h2>
+
+                    <p>
+                        Mountains can also teach us about patience and
+                        determination. Reaching a high point can take time
+                        and effort, just like learning a new skill.
+                    </p>
+
+                    <p>
+                        For me, travelling through mountain areas is also
+                        a chance to experience nature and discover new
+                        places.
+                    </p>
+                </div>
+
+            </section>
+
+
+            <section class="blog-section">
+
+                <figure class="blog-image">
+                    <img src="mountain3.jpg"
+                         alt="Mountain sunset landscape">
+
+                    <figcaption>
+                        A sunset over the mountains.
+                    </figcaption>
+                </figure>
+
+                <div class="blog-text">
+                    <h2>Protecting Mountain Areas</h2>
+
+                    <p>
+                        Mountain environments are important for people,
+                        animals and plants. It is important to keep these
+                        areas clean and avoid damaging the natural
+                        environment.
+                    </p>
+
+                    <p>
+                        When visiting mountains, we should take our rubbish
+                        with us, respect wildlife and help keep the area
+                        beautiful for future visitors.
+                    </p>
+                </div>
+
+            </section>
+
+
         </article>
 
-    </section>
-</main>
+    </main>
 
-<footer>
-    <p>&copy; 2026 Albina Pandey. All Rights Reserved.</p>
-</footer>
 
-<script>
-function toggleMenu() {
-    document.getElementById("navLinks").classList.toggle("show");
-}
-</script>
+    <footer>
+        <p>&copy; 2026 Albina Pandey. All Rights Reserved.</p>
+    </footer>
+
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("show");
+        }
+    </script>
 
 </body>
 </html>
