@@ -259,7 +259,7 @@ footer p {
 
 .skills-table th,
 .skills-table td {
-    border: 1px solid #ccc;
+    border: 1px solid white;
     padding: 12px;
     text-align: left;
 }
